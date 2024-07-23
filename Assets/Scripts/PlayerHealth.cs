@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour, ITakeDamage
 {
-	public GameObject enemySpawner;
-	public GameObject replayButton;
-	public GameObject changeLoadButton;
+	//public GameObject enemySpawner;
+	//public GameObject replayButton;
+	//public GameObject changeLoadButton;
 	PlayerEquipment playerEquipment;
 	[SerializeField]
 	private float health;
@@ -35,10 +35,10 @@ public class PlayerHealth : MonoBehaviour, ITakeDamage
 
 	private void Die()
 	{
-		enemySpawner.SetActive(false);
+		//enemySpawner.SetActive(false);
 		gameObject.SetActive(false);
-		replayButton.SetActive(true);
-		changeLoadButton.SetActive(true);
+		//replayButton.SetActive(true);
+		//changeLoadButton.SetActive(true);
 		health = playerEquipment.health;
 	}
 

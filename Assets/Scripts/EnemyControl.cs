@@ -3,10 +3,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(Rigidbody2D))]
 public class EnemyControl : MonoBehaviour
 {
 	[SerializeField]
-	private float speed;
+	private float speed = 3f;
 
 	Rigidbody2D rb;
     // Start is called before the first frame update

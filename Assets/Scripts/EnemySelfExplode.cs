@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemySelfExplode : MonoBehaviour
 {
 	[SerializeField]
-	private float explosionDamage;
+	private float explosionDamage = 5f;
 	private void OnTriggerEnter2D(Collider2D collision)
 	{
 		ITakeDamage takeDamage = collision.gameObject.GetComponent<ITakeDamage>();

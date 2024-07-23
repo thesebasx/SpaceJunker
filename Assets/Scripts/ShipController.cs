@@ -11,7 +11,7 @@ public class ShipController : MonoBehaviour
 	Rigidbody2D rb;
 	Vector2 mousePos;
 
-	private bool playerIsShooting;
+	//private bool playerIsShooting;
 
 
 	// Start is called before the first frame update
@@ -38,8 +38,8 @@ public class ShipController : MonoBehaviour
 	public void PlayerShoot()
 	{
 		
-		if (playerIsShooting == false)
-			return;
+		//if (playerIsShooting == false)
+		//	return;
 
 		
 			
